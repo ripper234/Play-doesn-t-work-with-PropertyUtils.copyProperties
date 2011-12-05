@@ -20,7 +20,7 @@
   </component>
   <component name="DebuggerManager">
     <line_breakpoints>
-      <breakpoint url="file://$PROJECT_DIR$/test/BasicTest.java" line="37" class="BasicTest" package="">
+      <breakpoint url="file://$PROJECT_DIR$/test/BasicTest.java" line="46" class="BasicTest" package="">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -33,7 +33,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/test/BasicTest.java" line="43" class="BasicTest" package="">
+      <breakpoint url="file://$PROJECT_DIR$/test/BasicTest.java" line="52" class="BasicTest" package="">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -101,7 +101,7 @@
       <file leaf-file-name="BasicTest.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/BasicTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="8" selection-start="1179" selection-end="1206" vertical-scroll-proportion="0.06012024">
+            <state line="58" column="26" selection-start="1747" selection-end="1747" vertical-scroll-proportion="0.8977956">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -574,7 +574,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/BasicTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="8" selection-start="1179" selection-end="1206" vertical-scroll-proportion="0.06012024">
+        <state line="58" column="26" selection-start="1747" selection-end="1747" vertical-scroll-proportion="0.8977956">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

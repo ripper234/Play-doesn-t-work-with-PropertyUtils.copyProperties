@@ -13,6 +13,9 @@ import java.util.List;
 public class BasicTest extends UnitTest {
     @Test
     public void getBeanInfo_manualProperty() throws IntrospectionException {
+
+        // This test passes
+
         BeanInfo beanInfo = Introspector.getBeanInfo(User.class);
         List<String> propertyNames = new ArrayList<String>();
         for (PropertyDescriptor descriptor : beanInfo.getPropertyDescriptors()) {
@@ -24,6 +27,9 @@ public class BasicTest extends UnitTest {
 
     @Test
     public void beanUtilsCopy_manualProperty() throws Exception {
+
+        // This test passes
+
         User source = new User();
         source.setManualProperty("aaa");
         User copy = new User();
@@ -33,6 +39,9 @@ public class BasicTest extends UnitTest {
 
     @Test
     public void getBeanInfo_autoPlayProperty() throws IntrospectionException {
+
+        // This test fails
+
         Introspector.flushCaches();
 
         BeanInfo beanInfo = Introspector.getBeanInfo(User.class);
@@ -46,6 +55,9 @@ public class BasicTest extends UnitTest {
 
     @Test
     public void beanUtilsCopy_autoPlayProperty() throws Exception {
+
+        // This test fails
+
         Introspector.flushCaches();
 
         User source = new User();
