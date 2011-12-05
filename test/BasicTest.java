@@ -1,5 +1,5 @@
 import models.User;
-import org.apache.commons.beanutils.BeanUtils;
+import org.apache.commons.beanutils.PropertyUtils;
 import org.junit.Test;
 import play.test.UnitTest;
 
@@ -10,7 +10,13 @@ import java.beans.PropertyDescriptor;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * A few tests for PropertyUtils.copyProperties. See this model: https://github.com/ripper234/Play-doesn-t-work-with-PropertyUtils.copyProperties/blob/master/app/models/User.java
+ */
 public class BasicTest extends UnitTest {
+
+
+
     @Test
     public void getBeanInfo_manualProperty() throws IntrospectionException {
 
@@ -33,7 +39,7 @@ public class BasicTest extends UnitTest {
         User source = new User();
         source.setManualProperty("aaa");
         User copy = new User();
-        BeanUtils.copyProperties(copy, source);
+        PropertyUtils.copyProperties(copy, source);
         assertEquals("aaa", copy.getManualProperty());
     }
 
@@ -63,7 +69,7 @@ public class BasicTest extends UnitTest {
         User source = new User();
         source.somefield = "aaa";
         User copy = new User();
-        BeanUtils.copyProperties(copy, source);
+        PropertyUtils.copyProperties(copy, source);
         assertEquals("aaa", copy.somefield);
     }
 }
