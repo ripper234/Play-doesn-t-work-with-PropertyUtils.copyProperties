@@ -33,6 +33,8 @@ public class BasicTest extends UnitTest {
 
     @Test
     public void getBeanInfo_autoPlayProperty() throws IntrospectionException {
+        Introspector.flushCaches();
+
         BeanInfo beanInfo = Introspector.getBeanInfo(User.class);
         List<String> propertyNames = new ArrayList<String>();
         for (PropertyDescriptor descriptor : beanInfo.getPropertyDescriptors()) {
@@ -44,6 +46,8 @@ public class BasicTest extends UnitTest {
 
     @Test
     public void beanUtilsCopy_autoPlayProperty() throws Exception {
+        Introspector.flushCaches();
+
         User source = new User();
         source.somefield = "aaa";
         User copy = new User();
