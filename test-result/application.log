@@ -1,0 +1,4 @@
+05 דצמ 2011 15:22:55,072 INFO  ~ Starting C:\work\tmp\play-copybeans\.
+05 דצמ 2011 15:22:55,733 WARN  ~ You're running Play! in DEV mode
+05 דצמ 2011 15:22:57,119 INFO  ~ Connected to jdbc:h2:mem:play;MODE=MYSQL;LOCK_MODE=0
+05 דצמ 2011 15:22:57,798 INFO  ~ Application 'play-copybeans' is now started !
